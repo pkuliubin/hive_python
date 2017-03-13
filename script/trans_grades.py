@@ -34,7 +34,6 @@ def process():
             xuebu, new_grade = trans_grade(grades)
             outlist = [course_id, course_type, grades, xuebu, new_grade]
             outstr = '\t'.join('{}'.format(item) for item in outlist)
-            # outstr = '\t'.join(items)
             sys.stdout.write('{}\n'.format(outstr))
         except Exception as e:
             print(e)
